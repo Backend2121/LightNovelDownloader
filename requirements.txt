@@ -1,0 +1,6 @@
+beautifulsoup4==4.11.1
+pytest==7.1.2
+requests==2.25.1
+selenium==4.2.0
+setuptools==57.4.0
+websockets==10.3
