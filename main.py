@@ -1,17 +1,18 @@
+import os
+def install():
+    # Install all from requirements.txt
+    os.system("pip install -r requirements.txt")
+
+install()
+
 from encodings.utf_8 import encode
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import undetected_chromedriver as uc
-import os
-
 
 from bs4 import BeautifulSoup
-
-def install():
-    # Install all from requirements.txt
-    os.system("pip install -r requirements.txt")
 
 def fixTitle(tit: str) -> str:
     """Remove aphostrophes and replace spaces with dashes, lower case the return value"""
